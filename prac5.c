@@ -27,8 +27,8 @@ enum
 typedef enum ButtonState_tag
 {
 	eBtnUndefined = 0,
-	eBtnShortPressed, 
-	eBtnLongPressed // if longer that 1000mS, its a short press
+	eBtnShortPressed, // if duration is lower than 999mS, its a short press
+	eBtnLongPressed  // else if > 1000ms its a long Press
 } eButtonState_t;
 
 typedef enum PlayerInputState_tag
