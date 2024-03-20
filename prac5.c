@@ -3,8 +3,9 @@
 #include <avr/io.h>
 //#include "conf_example.h"
 
-#define LEFT_BTN        PD2
-#define RIGHT_BTN       PD3
+#define LEFT_BTN        PC0
+#define RIGHT_BTN       PD1
+//Add more buttons
 #define LED_ON_DELAY    300
 #define LED_OFF_DELAY   50
 #define SPEED_UP        20
@@ -13,14 +14,8 @@ uint8_t btnArray[] =
 {
 	LEFT_BTN,
 	RIGHT_BTN  
+	//Add more buttons
 };
-
-enum
-{
-	eGoingLeft = -1,
-	eGoingRight = 1
-};
-
 
 
 // Enumerations
